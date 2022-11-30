@@ -1,0 +1,270 @@
+Go language is a modern language made by google team and it is an open source
+
+Starting with the first program of go:-
+
+we need to write the package name first and then start with immporting the "fmt" package,
+which can print and also act as Scanner/input class in go
+
+
+
+#FIRST PROGRAM
+package main
+
+import "fmt"
+
+func main() {
+	var fname string
+	fmt.Print("Enter your name:")
+	fmt.Scan(&fname)
+	fmt.Print("your name is "+ fname)
+}
+
+
+
+
+#Second program
+package main
+
+import "fmt"
+
+func main() {
+	var conferenceName = "go conference"               // we need to declare the varibale before use
+	fmt.Println(conferenceName)
+	fmt.Println("Welcome to this " + conferenceName + "Booking Application");
+	                              or
+	fmt.Println("Welcome to this " ,conferenceName, "Booking Application");
+}
+
+
+
+
+
+#KEYWORDS
+var -> use to define everything we want
+int -> use to define integer values
+const -> use to define those htings which remain cosntant throughout the program
+
+
+
+
+
+
+#PRINTING STATEMENT ALTERNATIVES FOR NEW LINE
+fmt.Println("Hello world")
+fmt.Print("Hello world\n")
+
+
+
+
+
+#PLACEHOLDERS
+fmt.Printf("Welcome to this %v Booking Application\n", conferenceName);    
+
+%v is a placeholder, we can use many placeholders but we need to mention the names at the end by which
+we want to replace and donot forget to use "Printf"
+
+
+
+
+
+
+#VARIBALE ASSIGNMENT
+var userName string =
+      or
+userName :=
+
+
+
+
+
+
+#INPUT FROM USER
+fmt.Scan(&varibaleName)
+
+
+
+
+
+
+#ARRAYS IN GO
+var varibale_Name [size] data_type
+-How to add element to it
+varibale_Name[index] = "name"
+
+append(bookings, firstName + " " + lastName)
+
+
+
+
+
+#SIZE OF ARRAY
+len(array)
+
+
+
+
+
+#SLICING
+bookings := []string{}
+
+
+
+
+
+#LOOPS
+go language has only one loop i.e for loop which can be used in diff ways
+
+1. for infinte loop
+    for{
+	    write your code in this block
+	}
+2. for each loop
+	for index,booking := range bookings{  
+    	var name = strings.Fields(bookings)           // we are splitting the string by the space and use its characters as seprate indexes
+    	var firstName = names[0]                      // and firstname is use to access the first letter of each string
+    }
+
+* for using the above string function we need to import the string package
+
+
+range:- range iterates over elements for different data structures(so not only arrays and slices)
+        for arrays and slices range provides the index and values for each elements
+ 
+*for each loop requires 2 inputs just like we have entered 2 varibales index and bookings into it but its not neccessary that we always have 
+two varibles so we can use undersocre instead of variable
+
+
+
+
+#IF AND ELSE LOOP ARE SAME AS JAVA
+
+
+
+#VALIDATING SOMETHING IN STRING
+
+variableName := strings.Contains(object in which you want to check , "what you want to check")
+
+
+
+
+#USE OF SWITCH STATEMENT
+
+city := "London"
+
+switch city{
+	case "Mexico":
+		// code here for mexico
+	case "Honk kong":
+		// code here for hong kong
+	case "berlin","paris":
+		// code here for berlin and paris
+	case "singapore":
+		// code here for singapore
+	default:
+		fmt.Println("No valid city entered")
+}
+
+
+
+
+#FUNCTION WITH RETURNING VALUE
+func greetings(book []string) []string{
+	// book data type must be mentioned
+	return bookName
+	// need to mention data type of bookName	
+}
+* we can return multiple values in go unlike other languages where we can only return one value
+
+
+
+*PACKAGE LEVEL VARIABLES CAN BE ACCESSED BY ANY FUCNTION IN THAT PACKAGE ALSO PACKAGE LEVEL VARIABLES CAN NOT DEFINED BY := WE
+EXPLICITLY NEED TO MENTION THE VAR AND DATA TYPE BUT ITS NOT A GOOD PRACTISE TO DEFINE THE VARIABLES AT PAKAGE LEVEL,
+THE GOOD PRACTISE IS THAT WE NEED TO DEFINE LOCAL VARIABLES AS MUCH AS POSSIBLE
+
+
+
+
+#WE CAN CREATE OUR OWN PACKAGES IN GO AND USE THEM IN OTHER PACKAGE SIMPLY BY IMPORTING THEM BUT SOMETHING IS DIFFERENT HERE,
+AND THAT THING IS WE NEED TO MENTION THE FOLDER NAME BEFORE THE PACKAGE OR GO WILL SEARCH FOR THAT PACKAGE AMONG ITS OWN PACKAGES
+
+
+***We just not need to write the location og package in import but also we need to make the fucntion works like other fxn works when we import them 
+example:- fmt.Println we used . to call that fxn and not only that we need to capitalize the first letter of function to import it
+and we can't only import function but also variables, constants, types
+
+
+
+##just like in python we have dictionary to save key-value pair we have map datatype in go to save key-value pair
+
+var userData = map[type of keys]and here for values
+
+example:- var userData = map[string]string
+
+#to create an empty map we have an inbuilt function make()
+var userData = make(map[string]string)
+
+
+
+***if we want to convert uint data type to string we need to use strconv package's FormatUint function 
+inside it we need to use uint64() for conversion
+
+example:- strconv.FormatUint(uint64(), base 10)
+
+
+
+
+# WE ARE NOT ABLE TO SAVE MORE THAN ONE DATA TYPE IN MAPS, SO TO SAVE DIFF DATA TYPES AT A TIME WE NEED TO USE STRUCT
+
+type userData struct{
+
+    // define here
+}
+
+
+
+
+instead of printing if we want to save the output of Println in a varibale we need to use ""Sprintf("")""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
