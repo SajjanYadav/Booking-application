@@ -1,0 +1,220 @@
+Go language is a modern language made by google team and it is an open source
+
+Starting with the first program of go:-
+
+we need to write the package name first and then start with immporting the "fmt" package which can print and also act as Scanner/input class in go
+
+
+
+#FIRST PROGRAM
+package main
+
+import "fmt"
+
+func main() {
+	var fname string
+	fmt.Print("Enter your name:")
+	fmt.Scan(&fname)
+	fmt.Print("your name is "+ fname)
+}
+
+
+
+
+#Second program
+package main
+
+import "fmt"
+
+func main() {
+	var conferenceName = "go conference"               // we need to declare the varibale before use
+	fmt.Println(conferenceName)
+	fmt.Println("Welcome to this " + conferenceName + "Booking Application");
+	                              or
+	fmt.Println("Welcome to this " ,conferenceName, "Booking Application");
+}
+
+
+
+
+
+#KEYWORDS
+var -> use to define everything we want
+int -> use to define integer values
+const -> use to define those htings which remain cosntant throughout the program
+
+
+
+
+
+
+#PRINTING STATEMENT ALTERNATIVES FOR NEW LINE
+fmt.Println("Hello world")
+fmt.Print("Hello world\n")
+
+
+
+
+
+#PLACEHOLDERS
+fmt.Printf("Welcome to this %v Booking Application\n", conferenceName);    
+
+%v is a placeholder, we can use many placeholders but we need to mention the names at the end by which we want to replace
+and donot forget to use "Printf"
+
+
+
+
+
+
+#VARIBALE ASSIGNMENT
+var userName string =
+      or
+userName :=
+
+
+
+
+
+
+#INPUT FROM USER
+fmt.Scan(&varibaleName)
+
+
+
+
+
+
+#ARRAYS IN GO
+var varibale_Name [size] data_type
+-How to add element to it
+varibale_Name[index] = "name"
+
+append(bookings, firstName + " " + lastName)
+
+
+
+
+
+#SIZE OF ARRAY
+len(array)
+
+
+
+
+
+#SLICING
+bookings := []string{}
+
+
+
+
+
+#LOOPS
+go language has only one loop i.e for loop which can be used in diff ways
+
+1. for infinte loop
+    for{
+	    write your code in this block
+	}
+2. for each loop
+	for index,booking := range bookings{  
+    	var name = strings.Fields(bookings)           // we are splitting the string by the space and use its characters as seprate indexes
+    	var firstName = names[0]                      // and firstname is use to access the first letter of each string
+    }
+
+* for using the above string function we need to import the string package
+
+
+range:- range iterates over elements for different data structures(so not only arrays and slices)
+        for arrays and slices range provides the index and values for each elements
+ 
+*for each loop requires 2 inputs just like we have entered 2 varibales index and bookings into it but its not neccessary that we always have 
+two varibles so we can use undersocre instead of variable
+
+
+
+
+#IF AND ELSE LOOP ARE SAME AS JAVA
+
+
+
+#VALIDATING SOMETHING IN STRING
+
+variableName := strings.Contains(object in which you want to check , "what you want to check")
+
+
+
+
+#USE OF SWITCH STATEMENT
+
+city := "London"
+
+switch city{
+	case "Mexico":
+		// code here for mexico
+	case "Honk kong":
+		// code here for hong kong
+	case "berlin","paris":
+		// code here for berlin and paris
+	case "singapore":
+		// code here for singapore
+	default:
+		fmt.Println("No valid city entered")
+}
+
+
+
+
+#FUNCTION WITH RETURNING VALUE
+func greetings(book []string) []string{
+	// book data type must be mentioned
+	return bookName
+	// need to mention data type of bookName	
+}
+* we can return multiple values in go unlike other languages where we can only return one value
+
+
+
+*PACKAGE LEVEL VARIABLES CAN BE ACCESSED BY ANY FUCNTION IN THAT PAKCGAE ALSO PACKAGE LEVEL VARIABLES CAN NOT ACCESSED BY := WE
+EXPLICITLY NEED TO MENTION THE VAR AND ALL THINS
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
